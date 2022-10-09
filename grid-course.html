@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grid practice</title>
+    <style>
+        .grid-container{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 100px;
+        }
+
+        .grid-container2{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 100px 200px;
+        }
+
+        .grid-container3{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+
+        .grid-container4{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 100px 1fr 2fr;
+        }
+
+        .grid-container5{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr;
+            height: 200px;
+            column-gap: 20px;
+            row-gap: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        let us go
+    <div class="grid-container">
+        <div style="background-color: lightblue;">Div 1</div>
+        <div style="background-color: lightpink;">Div 2<p>text</p></div>
+    </div>
+
+    <div class="grid-container2">
+        <div style="background-color: lightblue;">Div 1</div>
+        <div style="background-color: lightpink;">Div 2<p>text</p></div>
+        <div style="background-color: lightblue;">200px</div>
+    </div>
+
+    <div class="grid-container3">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+    </div>
+
+    <div class="grid-container4">
+        <div style="background-color: lightblue;">100px</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+    <div class="grid-container5">
+        <div style="background-color: lightblue;">1fr</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">1fr</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">1fr</div>
+        <div style="background-color: lightpink;">1fr</div>
     </div>
 </body>
 </html>
